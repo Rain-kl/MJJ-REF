@@ -5,16 +5,15 @@ extra:
   analytics:
     provider: google
     property: G-1BJ0XH0RSM
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/MetaCubeX/mihomo
-    - icon: material/file-document
-      link: https://github.com/MetaCubeX/Meta-Docs
+
+#  social:
+#    - icon: fontawesome/brands/github
+#      link: https://github.com/MetaCubeX/mihomo
+#    - icon: material/file-document
+#      link: https://github.com/MetaCubeX/Meta-Docs
 
 theme:
   name: material
-  logo: assets/images.jpeg
-  favicon: assets/images.jpeg
   features:
     - search.highlight
     - navigation.tracking
