@@ -3,7 +3,7 @@
 
 ```
 apt update -y
-apt install sudo curl wget vim
+apt install -y sudo curl wget vim iperf3
 timedatectl set-timezone Asia/Shanghai
 ```
 
