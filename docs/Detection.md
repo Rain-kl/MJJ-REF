@@ -43,7 +43,7 @@ bash <(curl -Ls https://IP.Check.Place) -x socks5://username:password@socksproxy
 
 #### [ipdata](https://ipdata.co/)
 
-![](assets/检测脚本/file-20251220151622651%202.png)
+![](assets/Detection/file-20251220154306650.png)
 
 ### 网络质量
 
@@ -62,9 +62,9 @@ nexttrace 1.0.0.1
 
 #### [pingpe](https://ping.pe/)
 
-![](assets/检测脚本/file-20251220151622651%201.png)
+![](assets/Detection/file-20251220154306651.png)
 #### [itdog](https://www.itdog.cn/)
-![](assets/检测脚本/file-20251220151622651.png)
+![](assets/Detection/file-20251220154306652.png)
 
 #### [BGPTOOLS](https://bgp.tools/)
 

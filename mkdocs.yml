@@ -84,8 +84,8 @@ markdown_extensions:
 nav:
   - 简介: index.md
   - 脚本:
-    - 初始化脚本: 初始化脚本.md
-    - 检测脚本: 检测脚本.md
+    - 初始化脚本: Initialization.md
+    - 检测脚本: Detection.md
   - 感谢: 感谢.md
 
 
