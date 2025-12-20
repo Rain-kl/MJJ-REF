@@ -1,0 +1,44 @@
+{
+  "recentFiles": [
+    {
+      "basename": "优质博客",
+      "path": "优质博客.md"
+    },
+    {
+      "basename": "SUI",
+      "path": "脚本/SUI.md"
+    },
+    {
+      "basename": "Komari",
+      "path": "脚本/Komari.md"
+    },
+    {
+      "basename": "入网",
+      "path": "脚本/入网.md"
+    },
+    {
+      "basename": "系统初始化",
+      "path": "脚本/系统初始化.md"
+    },
+    {
+      "basename": "节点命名",
+      "path": "节点命名.md"
+    },
+    {
+      "basename": "HOST命名",
+      "path": "HOST命名.md"
+    },
+    {
+      "basename": "DE-Netcup-C1",
+      "path": "服务登记/DE-Netcup-C1.md"
+    },
+    {
+      "basename": "C1",
+      "path": "职能表/C1.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}
