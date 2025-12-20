@@ -81,7 +81,12 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       emoji_index: !!python/name:material.extensions.emoji.twemoji
 
-
+nav:
+  - 简介: index.md
+  - 脚本:
+    - 初始化脚本: 初始化脚本.md
+    - 检测脚本: 检测脚本.md
+  - 感谢名单: 感谢名单.md
 
 
 plugins:
