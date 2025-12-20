@@ -86,6 +86,11 @@ nav:
   - 脚本:
     - 初始化脚本: Initialization.md
     - 检测脚本: Detection.md
+  - 命令: Command.md
+  - 配置:
+      - 基础配置: Configuration/index.md
+      - 问题疑难: Configuration/FAQ.md
+      - Oracle 专区: Configuration/Oracle.md
   - 关于:  About.md
 
 
