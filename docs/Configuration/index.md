@@ -42,7 +42,15 @@ systemd-resolved 服务是用来提供本机应用软件与DNS 解析服务的�
 
 ## sudo无需密码
 
-```jsx
+```bash
+USER_NAME="${SUDO_USER:-$(whoami)}"
+echo "$USER_NAME ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/99-nopasswd-$USER_NAME > /dev/null \
+&& sudo chmod 0440 /etc/sudoers.d/99-nopasswd-$USER_NAME \
+&& sudo visudo -cf /etc/sudoers.d/99-nopasswd-$USER_NAME
+```
+
+```bash
 sudo visudo -f /etc/sudoers.d/99-nopasswd-user
 your_username ALL=(ALL) NOPASSWD: ALL
 ```
+
