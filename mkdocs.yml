@@ -1,5 +1,90 @@
-site_name: MJJ-REF
+site_name: MJJ-REF Docs
+copyright: Copyright &copy 2025 Arctel
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: G-1BJ0XH0RSM
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MetaCubeX/mihomo
+    - icon: material/file-document
+      link: https://github.com/MetaCubeX/Meta-Docs
 
 theme:
   name: material
+  logo: assets/images.jpeg
+  favicon: assets/images.jpeg
+  features:
+    - search.highlight
+    - navigation.tracking
+    - navigation.instant
+    # - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.top
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+    - content.action.edit
+    - content.code.copy
+    - content.code.select
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
 
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      toc_depth: 3
+      anchorlink: true
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.magiclink
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+
+plugins:
+  - search
+  - awesome-pages
+
+  - git-revision-date-localized:
+      locale: zh
