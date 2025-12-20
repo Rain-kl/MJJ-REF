@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# 简介
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+MJJ-REF 主要用作为在管理 VPS 的参考文档, 涵盖:
+- VPS 检测脚本
+- VPS 常用优化
+- VPS 管理策略
 
-## Commands
+系统主要为 debian 系, 并且以 ubuntu 为主
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
