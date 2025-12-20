@@ -62,10 +62,12 @@ nexttrace 1.0.0.1
 
 #### [pingpe](https://ping.pe/)
 
-
+![](assets/VPS%20测试脚本/file-20251220151128636.png)
 #### [itdog](https://www.itdog.cn/)
+![](assets/VPS%20测试脚本/file-20251220151201186.png)
 
 #### [BGPTOOLS](https://bgp.tools/)
+
 
 ### 流媒体测试
 
