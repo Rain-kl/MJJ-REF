@@ -86,7 +86,7 @@ nav:
   - 脚本:
     - 初始化脚本: Initialization.md
     - 检测脚本: Detection.md
-  - 感谢: 感谢.md
+  - 关于:  About.md
 
 
 plugins:
