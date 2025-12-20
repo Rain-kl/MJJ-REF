@@ -40,3 +40,9 @@ systemctl restart networking
 
 systemd-resolved 服务是用来提供本机应用软件与DNS 解析服务的，其包含解析主机名称、IP 地址、域名、DNS 资源记录等，Ubuntu修改DNS就需要通过此服务来完成！
 
+## sudo无需密码
+
+```jsx
+sudo visudo -f /etc/sudoers.d/99-nopasswd-user
+your_username ALL=(ALL) NOPASSWD: ALL
+```
