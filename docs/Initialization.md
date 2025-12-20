@@ -20,9 +20,26 @@ wget -O swap.sh https://raw.githubusercontent.com/yuju520/Script/main/swap.sh &&
 ```
 
 
+## 网络优化
+
+### BBR 调优
+
+```jsx
+wget <http://sh.xdmb.xyz/tcp.sh> && bash tcp.sh
+```
+
+>*ICMP不可达喵*: 
+>
+>一般无脑选11，BBR+FQ即可，有时候可以用13的BBR+CAKE，还有人说PIE好用，其实一般11就行了，其他容易越调越垃圾。
+>
+> 每个服务器都不同，这个脚本可用可不用，我一般默认开11的
+
+
 ## 安全设置
 
 - 修改 ssh 端口
+
+修改为1022 端口
 
 ```
 sudo sed -i 's/^#\?Port 22.*/Port 1022/g' /etc/ssh/sshd_config
@@ -68,21 +85,6 @@ sudo systemctl enable fail2ban
 sudo systemctl restart fail2ban
 fail2ban-client status
 ```
-
-## 网络优化
-
-### BBR 调优
-
-```jsx
-wget <http://sh.xdmb.xyz/tcp.sh> && bash tcp.sh
-```
-
->*ICMP不可达喵*: 
->
->一般无脑选11，BBR+FQ即可，有时候可以用13的BBR+CAKE，还有人说PIE好用，其实一般11就行了，其他容易越调越垃圾。
->
-> 每个服务器都不同，这个脚本可用可不用，我一般默认开11的
-
 
 
 ### 大杂烩
