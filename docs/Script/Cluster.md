@@ -47,3 +47,29 @@ sudo systemctl stop komari-agent && sudo systemctl disable komari-agent && sudo 
 VERSION=1.2.2 && bash <(curl -Ls https://raw.githubusercontent.com/alireza0/s-ui/$VERSION/install.sh) $VERSION
 ```
 
+### Gost
+
+```
+sudo vim /etc/systemd/system/gost.service
+```
+
+```
+[Unit]
+Description=GO Simple Tunnel
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/gost -api "http://<admin>:<password>@0.0.0.0:50000"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable gost
+sudo systemctl restart gost
+```
