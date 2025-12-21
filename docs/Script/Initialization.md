@@ -14,16 +14,10 @@ apt install -y sudo curl wget vim iperf3 tmux btop vnstat fd-find
 timedatectl set-timezone Asia/Shanghai
 ```
 
-- 添加 swap
+- 内存优化
 
 ```
-wget -O swap.sh https://raw.githubusercontent.com/yuju520/Script/main/swap.sh && chmod +x swap.sh && clear && ./swap.sh
-```
-
-- 添加 zram
-
-```
-sudo apt install -y systemd-zram-generator && echo -e "[zram0]\nzram-size = ram / 2\ncompression-algorithm = lz4\nswap-priority = 100" | sudo tee /etc/systemd/zram-generator.conf >/dev/null && sudo systemctl daemon-reload && sudo systemctl restart systemd-zram-setup@zram0.service && swapon --show
+curl -fsSL https://raw.githubusercontent.com/Rain-kl/tunescipt/main/ram-tune.sh -o /tmp/ram-tune.sh && sudo bash /tmp/ram-tune.sh
 ```
 
 ## 脚本工具箱
