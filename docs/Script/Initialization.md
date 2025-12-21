@@ -9,9 +9,15 @@ bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_star
 
 ```
 apt update -y
-apt install -y sudo curl wget vim iperf3 tmux btop ncdu vnstat fd-find 
+apt install -y sudo curl wget vim iperf3 tmux screen btop ncdu
 
 timedatectl set-timezone Asia/Shanghai
+```
+
+- 进阶工具
+
+```
+apt install -y vnstat fd-find ranger
 ```
 
 - 内存优化
