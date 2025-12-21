@@ -49,6 +49,14 @@ VERSION=1.2.2 && bash <(curl -Ls https://raw.githubusercontent.com/alireza0/s-ui
 
 ### Gost
 
+下载地址
+
+```
+https://github.com/go-gost/gost/releases
+```
+
+配置系统服务
+
 ```
 sudo vim /etc/systemd/system/gost.service
 ```
