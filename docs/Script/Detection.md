@@ -1,4 +1,4 @@
-此处内容仅为备份, 详细参阅[作者原文](https://meowvps.com/blog/script/*https://blog.03k.org/post/ue-ddns.html*)
+此处内容仅为备份, 详细参阅[作者原文](https://meowvps.com/blog/script/)
 
 ### 融合脚本
 
