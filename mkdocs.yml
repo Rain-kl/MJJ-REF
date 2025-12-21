@@ -87,6 +87,7 @@ nav:
     - 初始化脚本: Script/Initialization.md
     - 检测脚本: Script/Detection.md
   - 命令: Command.md
+  - 集群: Cluster.md
   - 配置:
       - 基础配置: Configuration/index.md
       - 问题疑难: Configuration/FAQ.md

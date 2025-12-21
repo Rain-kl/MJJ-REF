@@ -3,6 +3,8 @@
 
 ## 内网组建
 
+### Tailscale
+
 - tailscale 安装
 
 ```
@@ -20,6 +22,8 @@ sudo rm -rf /var/lib/zerotier-one
 ```
 
 ## 服务器监控
+
+### komari
 
 - komari 探针
 
