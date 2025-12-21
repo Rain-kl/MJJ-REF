@@ -26,6 +26,14 @@ wget -O swap.sh https://raw.githubusercontent.com/yuju520/Script/main/swap.sh &&
 sudo apt install -y systemd-zram-generator && echo -e "[zram0]\nzram-size = ram / 2\ncompression-algorithm = lz4\nswap-priority = 100" | sudo tee /etc/systemd/zram-generator.conf >/dev/null && sudo systemctl daemon-reload && sudo systemctl restart systemd-zram-setup@zram0.service && swapon --show
 ```
 
+## 脚本工具箱
+
+- KEJILION.SH - 科技lion一键脚本工具
+
+```
+bash <(curl -sL kejilion.sh)
+```
+
 ## 网络优化
 
 ### BBR 调优
