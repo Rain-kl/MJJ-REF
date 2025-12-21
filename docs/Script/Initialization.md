@@ -9,7 +9,8 @@ bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_star
 
 ```
 apt update -y
-apt install -y sudo curl wget vim iperf3
+apt install -y sudo curl wget vim iperf3 tmux btop vnstat
+
 timedatectl set-timezone Asia/Shanghai
 ```
 
