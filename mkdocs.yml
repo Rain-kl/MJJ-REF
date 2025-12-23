@@ -84,16 +84,16 @@ markdown_extensions:
 nav:
   - 简介: index.md
   - 脚本:
-    - 初始化脚本: Script/Initialization.md
-    - 检测脚本: Script/Detection.md
+      - 初始化脚本: Script/Initialization.md
+      - 检测脚本: Script/Detection.md
   - 命令: Command.md
   - 集群: Cluster.md
   - 配置:
       - 基础配置: Configuration/index.md
       - 问题疑难: Configuration/FAQ.md
       - Oracle 专区: Configuration/Oracle.md
-  - 关于:  About.md
-
+  - 部署: Deploy/
+  - 关于: About.md
 
 plugins:
   - search

@@ -2,6 +2,7 @@
 ## 致谢名单
 
 - [ICMP不可达喵](https://meowvps.com/)
+- [GlobalSign](https://www.nodeseek.com/space/5813#/general)
 
 ## 参考文档
 

@@ -26,6 +26,10 @@ hide:
 
     深入了解各种服务与系统的优化配置。
 
+- :material-shuffle-variant: &nbsp; __[部署][Docker]__
+
+    常用服务的Docker部署。
+
 </div>
 
 ## 环境
