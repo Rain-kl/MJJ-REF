@@ -56,3 +56,9 @@ networks:
     driver: bridge
 ```
 
+```
+mkdir -p ./data/nginx
+mkdir -p ./data/ssl
+cd ./data/ssl
+
+```
