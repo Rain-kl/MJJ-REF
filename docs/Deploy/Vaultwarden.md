@@ -59,6 +59,52 @@ networks:
 ```
 mkdir -p ./data/nginx
 mkdir -p ./data/ssl
-cd ./data/ssl
+cd ./data
+openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 -nodes -keyout ssl/key.pem -out ssl/cert.pem -subj "/CN=vaultwarden"
+
+vim nginx/nginx.conf
+```
 
 ```
+events { worker_connections 1024; }
+
+http {
+  server {
+    listen 443 ssl;
+    server_name _;
+
+    ssl_certificate     /ssl/cert.pem;
+    ssl_certificate_key /ssl/key.pem;
+
+    # WebSocket（Vaultwarden 通知）
+    location /notifications/hub {
+      proxy_pass http://vaultwarden:80;
+      proxy_http_version 1.1;
+
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection "upgrade";
+
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+
+      proxy_read_timeout 86400;
+    }
+
+    # 普通 HTTP 请求
+    location / {
+      proxy_pass http://vaultwarden:80;
+
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+
+      proxy_read_timeout 86400;
+    }
+  }
+}
+```
+
+

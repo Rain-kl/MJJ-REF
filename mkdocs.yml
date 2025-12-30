@@ -94,6 +94,7 @@ nav:
       - Oracle 专区: Configuration/Oracle.md
   - 部署: 
       - Komari: Deploy/Komari.md
+      - Vaultwarden: Deploy/Vaultwarden.md
   - 关于: About.md
 
 plugins:
