@@ -1,5 +1,8 @@
+## 介绍
 
-## **1) 新建文件 docker-compose.yml**
+自托管知识库, 知识平台
+
+## 1) 新建文件 docker-compose.yml
 
 
 ```
@@ -49,7 +52,7 @@ services:
     restart: unless-stopped
 ```
 
-## **2) 生成 APP_KEY 并启动**
+## 2) 生成 APP_KEY 并启动
 
   
 先生成 APP_KEY（linuxserver 官方建議用容器指令產生）：
@@ -58,7 +61,7 @@ services:
 docker run -it --rm --entrypoint /bin/bash lscr.io/linuxserver/bookstack:latest appkey
 ```
 
-## **3) 登入與初始化**
+## 3) 登入與初始化
 
 打開：
 
