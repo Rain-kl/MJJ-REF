@@ -8,7 +8,7 @@ services:
     container_name: vaultwarden
     restart: unless-stopped
     ports:
-      - ":80"
+      - "20080:80"
     volumes:
       - ./data:/data
     environment:
