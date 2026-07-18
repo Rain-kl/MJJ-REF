@@ -25,6 +25,12 @@ bash <(curl -sSL https://linuxmirrors.cn/docker.sh) --only-registry
 bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"
 ```
 
+## X-UI
+
+```
+bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+```
+
 ## 系统优化
 
 - 时区设置
