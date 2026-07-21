@@ -26,6 +26,12 @@ bash <(curl -sL kejilion.sh)
 
 超多功能，一键开启linux管理之旅
 
+### 解锁测试
+
+```
+bash <(curl -L -s check.unlock.media)
+```
+
 ### ip质量
 
 #### [IP质量体检脚本](https://github.com/xykt/IPQuality)
